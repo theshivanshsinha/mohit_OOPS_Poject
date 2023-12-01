@@ -89,19 +89,18 @@ function MessageSeller() {
 
   return (
     <div>
-      <header>
+      <header style={{backgroundColor:"black"}}>
         <div className="logo-tagline">
           <h1>BITSBids</h1>
         </div>
         <span id="greeting"></span>
-        <span className="tagline">...bid the BITS way</span>
       </header>
 
-      <nav>
+      <nav style={{backgroundColor:"black"}}>
         <ul>
-          <li><Link to="/home">Home</Link></li>
+          <li><Link to="/Home">Home</Link></li>
           <li><Link to="/bid">Bid</Link></li>
-          <li><Link to="/your-bids">Your BIDS</Link></li>
+          <li><Link to="/your-bid">Your BIDS</Link></li>
           <li id="message"><Link to="/message-seller">Message Seller</Link></li>
           <li><Link to="/wallet">Wallet</Link></li>
           <li><Link to="/profile-bid">Profile</Link></li>

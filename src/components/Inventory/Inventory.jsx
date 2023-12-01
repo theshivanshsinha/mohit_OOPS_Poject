@@ -35,16 +35,16 @@ const Inventory = () => {
 
   return (
     <div>
-      <header>
+      <header style={{ backgroundColor: '#000' }}>
         <div className="logo-tagline">
           <h1>BITSBids</h1>
         </div>
         <span id="greeting"></span>
-        <span className="tagline">...bid the BITS way</span>
+        
       </header>
-      <nav>
+      <nav style={{backgroundColor:"black"}}>
         <ul>
-          {/* Use Link instead of anchor tags */}
+          
           <li id="inventory">
             <Link to="/inventory">Inventory</Link>
           </li>
@@ -58,7 +58,7 @@ const Inventory = () => {
             <Link to="/profile-sell">Profile</Link>
           </li>
           <li>
-            <Link to="/">Back to Bidding</Link>
+            <Link to="/Home">Back to Bidding</Link>
           </li>
         </ul>
       </nav>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-
+import "./Bid.css";
 const Bid = () => {
   const [products, setProducts] = useState([]);
 
@@ -19,31 +19,29 @@ const Bid = () => {
   return (
     <div>
       {/* Header Section */}
-      <header>
+      <header className="headNav">
         <div className="logo-tagline">
           <h1>BITSBids</h1>
         </div>
 
-        <div className="search-bar">
-          <input type="text" className="search-input" placeholder="Search products..." />
-          <button className="search-button">Search</button>
+        <div className="search-bar" style={{position:"relative",left:"60px"}}>
+          <input type="text" className="search-input" placeholder="Search products..." style={{height:"10px",width:"450px"}} />
+          <button className="search-button" style={{height:"45px",width:"150px"}}>Search</button>
         </div>
 
-        <span className="tagline">...bid the BITS way</span>
-      </header>
-
-      {/* Navigation Section */}
-      <nav>
+     {/* Navigation Section */}
+      <nav style={{backgroundColor:"black"}}>
         <ul>
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/Home">Home</Link></li>
           <li><Link to="/bid">Bid</Link></li>
-          <li><Link to="/yourbids">Your BIDS</Link></li>
-          <li><Link to="/messageseller">Message Seller</Link></li>
+          <li><Link to="/your-bid">Your BIDS</Link></li>
+          <li><Link to="/message-seller">Message Seller</Link></li>
           <li><Link to="/wallet">Wallet</Link></li>
           <li><Link to="/profile-bid">Profile</Link></li>
           <li><Link to="/inventory">Sell</Link></li>
         </ul>
       </nav>
+      </header>
 
       {/* Main Content Section */}
       <main>

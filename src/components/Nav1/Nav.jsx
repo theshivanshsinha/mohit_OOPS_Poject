@@ -5,22 +5,19 @@ import "./Nav.css";
 
 function Nav() {
   return (
-    <header>
+    <header className="navhead">
       <div className="logo-tagline">
         <h1>BITSBids</h1>
       </div>
-      <div className="search-bar">
-        <input type="text" className="search-input" placeholder="Search products..." />
-        <button className="search-button">Search</button>
+      <div className="search-bar" style={{position:"relative",left:"60px"}}>
+        <input type="text" className="search-input" placeholder="Search products..." style={{height:"10px",width:"450px"}} />
+        <button className="search-button" style={{height:"45px",width:"150px"}}>Search</button>
       </div>
 
-      <span className="tagline">...bid the BITS way</span>
-
-      <nav>
+      <nav style={{backgroundColor:"black"}}>
         <ul>
-          {/* Use Link instead of anchor tags */}
           <li id="home">
-            <Link to="/">Home</Link>
+            <Link to="/Home">Home</Link>
           </li>
           <li>
             <Link to="/bid">Bid</Link>

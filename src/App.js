@@ -13,13 +13,16 @@ import Signup from './components/Signup/Signup';
 import SpecificProduct from './components/SpecificProduct/SpecificProduct';
 import Wallet from './components/Wallet/Wallet';
 import YourBid from './components/YourBid/YourBid';
+import LandingPage from "./components/LandPage/LandingPage";
 import { ChakraProvider } from '@chakra-ui/react';
+import "./App.css";
 
 function App() {
   return (
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<LandingPage />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/add-product" element={<AddProduct />} />
           <Route path="/bid" element={<Bid />} />
           <Route path="/inventory" element={<Inventory />} />

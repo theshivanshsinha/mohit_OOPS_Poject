@@ -38,18 +38,17 @@ function YourBid() {
 
   return (
     <div>
-      <header>
+      <header style={{backgroundColor:"black"}}>
         <div className="logo-tagline">
           <h1>BITSBids</h1>
         </div>
         <span id="greeting"></span>
-        <span className="tagline">...bid the BITS way</span>
       </header>
 
-      <nav>
+      <nav style={{backgroundColor:"black"}}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/Home">Home</Link>
           </li>
           <li>
             <Link to="/bid">Bid</Link>

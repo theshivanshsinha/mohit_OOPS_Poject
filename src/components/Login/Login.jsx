@@ -1,8 +1,10 @@
 // Login.jsx
+
 import React, { useState } from 'react';
-import { Button, Input, Box, Heading } from '@chakra-ui/react';
+import { Button, Input, Box, Heading, Link as ChakraLink } from '@chakra-ui/react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './Login.css'; // Import your custom styles
 
 function Login() {
   // State for storing username and password
@@ -45,7 +47,7 @@ function Login() {
   };
 
   return (
-    <Box className="logouterbox">
+    <Box className="login-outer-box">
       <Box className="container">
         <Heading as="h2">Login</Heading>
         <span className="bitsbids-text">BITSBids</span>
@@ -74,7 +76,7 @@ function Login() {
             <Link to="/forgot-password">Forgot Password?</Link>
           </div>
 
-          <Button type="button" onClick={handleLoginButtonClick}>
+          <Button type="button" onClick={handleLoginButtonClick} id='btn'>
             Login
           </Button>
         </form>

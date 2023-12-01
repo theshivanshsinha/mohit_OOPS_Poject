@@ -8,10 +8,10 @@ const ProfileSell = () => {
   const [userData, setUserData] = useState({
     username: "User's Name",
     email: "user@example.com",
-    firstname: "Eshaa",
-    lastname: "Aranggan",
-    bitsid: "2022A7PS2013H",
-    hostel: "Malaviya",
+    firstname: "yourname",
+    lastname: "yourname",
+    bitsid: "2022A7PS****H",
+    hostel: "VK126",
   });
 
   useEffect(() => {
@@ -53,16 +53,15 @@ const ProfileSell = () => {
 
   return (
     <div>
-      <header className="header">
+      <header className="header" style={{backgroundColor:"black"}}>
         <div className="logo-tagline">
           <h1>BITSBids</h1>
         </div>
         <span id="greeting"></span>
-        <span className="tagline">...bid the BITS way</span>
       </header>
 
       <div className="navbar">
-        <nav>
+        <nav style={{backgroundColor:"black"}}>
           <ul>
             <li>
               <Link to="/inventory">Inventory</Link>
@@ -77,7 +76,7 @@ const ProfileSell = () => {
               <Link to="/profile-sell">Profile</Link>
             </li>
             <li>
-              <Link to="/">Back to Bidding</Link>
+              <Link to="/Home">Back to Bidding</Link>
             </li>
           </ul>
         </nav>

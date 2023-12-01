@@ -1,4 +1,6 @@
-.outerbox{
+/* Signup.css */
+
+.outer-box {
   font-family: 'ABeeZee';
   font-size: 18px;
   background: linear-gradient(to right, #232526, #414345);
@@ -13,20 +15,21 @@
 .container {
   max-width: 800px;
   width: 80%;
-  padding: 20px;
+  padding: 40px;
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   color: #333;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  transition: transform 0.3s ease;
 }
 
 .signup-heading {
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
@@ -64,7 +67,7 @@ input[type="tel"],
 input[type="password"],
 input[type="hostel"] {
   width: 100%;
-  padding: 12px;
+  padding: 15px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -79,20 +82,27 @@ input[type="hostel"]:focus {
   border-color: #0056b3;
 }
 
-.haveanaccount {
+.have-an-account {
   text-align: center;
   margin-top: 20px;
   color: #333;
+  font-size: 16px;
+  opacity: 0.8;
 }
 
 a {
   color: #0056b3;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #003366;
 }
 
 button {
-  background-color: #ff9900; 
+  background-color: #e50914; /* Netflix red */
   color: white;
   padding: 15px;
   border: none;
@@ -101,8 +111,10 @@ button {
   font-size: 18px;
   width: 100%;
   transition: background-color 0.3s ease;
+  outline: none;
 }
 
 button:hover {
-  background-color: #cc7a00; 
+  background-color: #b9070a; /* Darker shade on hover */
+  transform: scale(1.05);
 }

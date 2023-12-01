@@ -6,14 +6,14 @@ body {
   box-sizing: border-box;
 }
 
-header {
-  background-color: #000045;
+.navhead {
+  background-color: #000;
   text-align: left;
   color: white;
-  padding: 15px 20px; /* Adjusted padding */
+  padding: 25px 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Vertically center align */
+  align-items: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -46,13 +46,13 @@ header nav li {
 header nav li a {
   color: white;
   text-decoration: none;
-  font-size: 18px; /* Increased font size */
+  font-size: 18px;
   transition: color 0.3s ease;
   position: relative;
 }
 
 header nav li a:hover {
-  color: #ffc107;
+  color: #e50914; /* Netflix red color */
 }
 
 .search-bar {
@@ -66,20 +66,20 @@ header nav li a:hover {
   border-bottom: 2px solid white;
   background-color: transparent;
   color: white;
-  border-radius: 5px; /* Added border-radius */
+  border-radius: 5px;
   width: 200px;
   transition: border-color 0.3s ease, width 0.3s ease;
 }
 
 .search-input:focus {
-  border-color: #ffc107;
+  border-color: #e50914; /* Netflix red color on focus */
   width: 250px;
 }
 
 .search-button {
   padding: 10px 20px;
-  background-color: transparent;
-  border: 1px solid white;
+  background-color: #e50914; /* Netflix red color */
+  border: none;
   color: white;
   border-radius: 5px;
   margin-left: 10px;
@@ -88,7 +88,7 @@ header nav li a:hover {
 }
 
 .search-button:hover {
-  background-color: #ffc107;
+  background-color: #ff0a16; /* Slightly darker red on hover */
 }
 
 header nav li a::before {
@@ -98,7 +98,7 @@ header nav li a::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #ffc107;
+  background-color: #e50914; /* Netflix red color */
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;

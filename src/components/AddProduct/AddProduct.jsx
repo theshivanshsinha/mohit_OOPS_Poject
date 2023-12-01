@@ -48,8 +48,14 @@ const AddProduct = () => {
   };
 
   return (
-    <div className='addbox'>
-      {/* Navigation Links */}
+    <div>
+      <header>
+        <div className="logo-tagline">
+          <h1>BITSBids</h1>
+        </div>
+        <span id="greeting"></span>
+        <span className="tagline">...bid the BITS way</span>
+      </header>
       <nav>
         <ul>
           <li>
@@ -65,81 +71,70 @@ const AddProduct = () => {
             <Link to='/profile-sell'>Profile</Link>
           </li>
           <li>
-            <Link to='/'>Back to Bidding</Link>
+            <Link to='/Home'>Back to Bidding</Link>
           </li>
         </ul>
       </nav>
 
-      {/* Form Section */}
-      <div className='container'>
-        <h2>Add Product</h2>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor='productName'>Product Name:</label>
-          <input
-            type='text'
-            id='productName'
-            name='productName'
-            value={product.productName}
-            onChange={handleChange}
-            required
-          />
-
-          <label htmlFor='price'>Base Price:</label>
-          <input
-            type='number'
-            id='price'
-            name='price'
-            value={product.price}
-            onChange={handleChange}
-            required
-          />
-
-          <label htmlFor='biddingEnds'>Bidding Ends:</label>
-          <input
-            type='datetime-local'
-            id='biddingEnds'
-            name='biddingEnds'
-            value={product.biddingEnds}
-            onChange={handleChange}
-            required
-          />
-
-          <label htmlFor='description'>Description:</label>
-          <textarea
-            id='description'
-            name='description'
-            value={product.description}
-            onChange={handleChange}
-            required
-          ></textarea>
-
-          <div>
-            <label htmlFor='images'>Upload Images (JPEG, PNG, JPG):</label>
+      <div className='addbox'>
+        {/* Form Section */}
+        <div className='container'>
+          <h2>Add Product</h2>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor='productName'>Product Name</label>
             <input
-              type='file'
-              id='images'
-              name='images'
-              accept='image/jpeg, image/png, image/jpg'
-              multiple
-              onChange={handleFileChange}
+              type='text'
+              id='productName'
+              name='productName'
+              value={product.productName}
+              onChange={handleChange}
               required
             />
-          </div>
 
-          <div className='image-video-input'>
-            <label htmlFor='videos'>Upload Videos:</label>
+            <label htmlFor='price'>Base Price</label>
             <input
-              type='file'
-              id='videos'
-              name='videos'
-              accept='video/*'
-              multiple
-              onChange={handleFileChange}
+              type='number'
+              id='price'
+              name='price'
+              value={product.price}
+              onChange={handleChange}
+              required
             />
-          </div>
 
-          <button type='submit'>Add Product</button>
-        </form>
+            <label htmlFor='biddingEnds'>Bidding Ends</label>
+            <input
+              type='datetime-local'
+              id='biddingEnds'
+              name='biddingEnds'
+              value={product.biddingEnds}
+              onChange={handleChange}
+              required
+            />
+
+            <label htmlFor='description'>Description</label>
+            <textarea
+              id='description'
+              name='description'
+              value={product.description}
+              onChange={handleChange}
+              required
+            ></textarea>
+
+            <div className='file-input'>
+              <label htmlFor='images'>Upload Images (JPEG, PNG, JPG)</label>
+              <input
+                type='file'
+                id='images'
+                name='images'
+                accept='image/jpeg, image/png, image/jpg'
+                onChange={handleFileChange}
+                required
+              />
+            </div>
+
+            <button type='submit'>Add Product</button>
+          </form>
+        </div>
       </div>
     </div>
   );

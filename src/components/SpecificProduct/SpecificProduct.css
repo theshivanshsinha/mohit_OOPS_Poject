@@ -1,0 +1,140 @@
+body {
+    font-family: 'ABeeZee';
+    font-size: 22px;
+}
+
+header {
+    background-color: #000045;
+    text-align: left;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-tagline {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.tagline {
+    color: white;
+    font-size: 23px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav li {
+    display: inline;
+    margin-right: 27px;
+    margin-left: 90px;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.search-bar {
+    text-align: right;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    width: 650px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+.trending-products,
+.new-arrivals {
+    width: 100%;
+    margin-bottom: 250px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-details {
+    display: flex;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-description {
+    flex: 2;
+}
+
+.image-arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.arrow-button {
+    font-size: 12px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.arrow-button:hover {
+    background-color: #d33a26;
+}
+
+.bid-button,
+.message-seller-button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #000045;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bid-button:hover,
+.message-seller-button:hover {
+    background-color: #001d3d;
+}

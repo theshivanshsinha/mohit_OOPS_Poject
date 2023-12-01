@@ -1,0 +1,119 @@
+
+body {
+    font-family: 'ABeeZee';
+    font-size: 22px;
+    margin: 0;
+  }
+  
+  .header {
+    background-color: #000045;
+    text-align: left;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-tagline {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 40px;
+  }
+  
+  .tagline {
+    color: white;
+    font-size: 23px;
+  }
+  
+  .navbar {
+    background-color: #000045;
+    text-align: center;
+  }
+  
+  .navbar nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .navbar nav li {
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .navbar nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+  }
+  
+  .main {
+    background-color: #f8f8f8;
+    padding: 18px;
+  }
+  
+  .user-profile {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .editable-field {
+    margin-bottom: 10px;
+  }
+  
+  .editable-field label {
+    display: inline-block;
+    width: 120px;
+    margin-right: 10px;
+  }
+  
+  .editable-field input[type="text"],
+  .editable-field input[type="email"] {
+    width: calc(100% - 130px);
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .profile-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-button,
+  .save-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .edit-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .save-button {
+    background-color: #008cba;
+    color: white;
+  }
+  
+  .save-button:hover {
+    background-color: #007ba7;
+  }
+  

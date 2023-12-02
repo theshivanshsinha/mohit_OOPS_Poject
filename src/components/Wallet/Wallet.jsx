@@ -56,9 +56,6 @@ const Wallet = () => {
           <li>
             <Link to="/Home">Home</Link>
           </li>
-          <li>
-            <Link to="/bid">Bid</Link>
-          </li>
           <li id="yourbids">
             <Link to="/your-bid">Your BIDS</Link>
           </li>

@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import "./Signup.css";
 
 function Signup() {
+
+  const baseURL = 'http://192.168.137.1:8080';
+
   const [formData, setFormData] = useState({
     firstname: '',
     hostel: '',
@@ -42,22 +45,24 @@ function Signup() {
     return true;
   };
 
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    console.log(formData);
     if (!validateForm()) {
       return;
     }
-
+  
     try {
-      const response = await axios.post("/users/email", formData);
-
+      const response = await axios.post(`${baseURL}/users`, formData);
+  
       // Handle the response as needed
       console.log("Form data posted successfully:", response.data);
     } catch (error) {
       console.error("Error posting form data:", error);
     }
   };
+  
 
   return (
     <div className='outerbox'>

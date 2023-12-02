@@ -67,9 +67,6 @@ const ProfileBid = () => {
               <Link to="/Home">Home</Link>
             </li>
             <li>
-              <Link to="/bid">Bid</Link>
-            </li>
-            <li>
               <Link to="/your-bid">Your BIDS</Link>
             </li>
             <li>
